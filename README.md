@@ -19,11 +19,11 @@ JavaScript: Interactive components and animations
 Bootstrap: Responsive design framework
 SCSS: Modular and maintainable styling
 Libraries & Plugins:
-  AOS: Animate on Scroll for smooth animations
-  Owl Carousel: Responsive carousels
-  Magnific Popup: For sleek modal popups
-  jQuery: Simplified DOM manipulation and animations
-  Font Icons: Icon libraries such as IcoMoon, Ionicons, and Flaticon
+AOS: Animate on Scroll for smooth animations
+Owl Carousel: Responsive carousels
+Magnific Popup: For sleek modal popups
+jQuery: Simplified DOM manipulation and animations
+Font Icons: Icon libraries such as IcoMoon, Ionicons, and Flaticon
 Prepros: Tool for preprocessing and optimizing resources
 
 Features
