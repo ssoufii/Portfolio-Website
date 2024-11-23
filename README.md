@@ -9,7 +9,7 @@ This portfolio is designed to offer a comprehensive view of my professional jour
 About Me: Details about my academic and professional background.
 Projects: A showcase of technical projects and accomplishments.
 Resume: Access to a downloadable version of my resume.
-Contact: Info to connect with me directly.
+Contact: Links to connect with me directly.
 The site is built with modern web development technologies and frameworks, ensuring a responsive and user-friendly experience across all devices.
 
 Technology Stack
@@ -27,13 +27,8 @@ Magnific Popup: For sleek modal popups
 jQuery: Simplified DOM manipulation and animations
 Font Icons: Icon libraries such as IcoMoon, Ionicons, and Flaticon
 Prepros: Tool for preprocessing and optimizing resources
+Google Maps API: For embedding location maps
 
-Features
-
-Fully responsive design for seamless performance on all devices
-Interactive animations and scroll effects
-Project carousels and modal views for enhanced user engagement
-Downloadable resume and integrated contact form
 
 Feedback
 
