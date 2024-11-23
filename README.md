@@ -14,6 +14,8 @@ The site is built with modern web development technologies and frameworks, ensur
 
 Technology Stack
 
+This project leverages the following tools and technologies:
+
 HTML5 & CSS3: Core structure and styling of the website
 JavaScript: Interactive components and animations
 Bootstrap: Responsive design framework
