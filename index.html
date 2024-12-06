@@ -143,10 +143,10 @@
     		<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">July 2024 - Present</span>
+    					<span class="date">July 2024 - September 2024</span>
     					<h2>Fellow</h2>
     					<span class="position">Headstarter AI</span>
-    					<p class="mt-4">Collaborated with the founder and team to align goals and strategize development, ensuring app success. Contributed to all development phases, from design to testing, creating a cohesive mobile application..</p>
+    					<p class="mt-4">Completed a fellowship at Headstarter AI, where I built this portfolio website, several AI based projects, all while gaining hands-on experience through hackathon participation, collaborative problem-solving, and intensive technical interview preparation</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
     					<span class="date">May 2023 - August 2023</span>
@@ -366,51 +366,46 @@
 				  </div>
 				  
 		
-					<div class="col-md-12">
-						<div class="project img ftco-animate d-flex justify-content-center align-items-center">
-							<div class="overlay"></div>
-							<div class="text text-center p-4">
-								<h3>Data Visualization Examples</h3>
-								<div id="data-visualization-section">
-									<div id="a9e5f8f4-a4d6-46f5-ad3f-9503f4afc63a" data-root-id="p1142" style="display: contents;"></div>
-									<script type="text/javascript">
-										(function() {
-											const fn = function() {
-												Bokeh.safely(function() {
-													(function(root) {
-														function embed_document(root) {
-															const docs_json = '{"371425f7-4517-4e35-b914-b2a435207790":...}';  // Shortened for brevity
-															const render_items = [{"docid":"371425f7-4517-4e35-b914-b2a435207790","roots":{"p1142":"a9e5f8f4-a4d6-46f5-ad3f-9503f4afc63a"},"root_ids":["p1142"]}];
-															root.Bokeh.embed.embed_items(docs_json, render_items);
-														}
+					
+						<div class="text text-center p-4">
+							
+							<script type="text/javascript">
+								(function() {
+									const fn = function() {
+										Bokeh.safely(function() {
+											(function(root) {
+												function embed_document(root) {
+													const docs_json = '{"371425f7-4517-4e35-b914-b2a435207790":...}';  // Shortened for brevity
+													const render_items = [{"docid":"371425f7-4517-4e35-b914-b2a435207790","roots":{"p1142":"a9e5f8f4-a4d6-46f5-ad3f-9503f4afc63a"},"root_ids":["p1142"]}];
+													root.Bokeh.embed.embed_items(docs_json, render_items);
+												}
+												if (root.Bokeh !== undefined) {
+													embed_document(root);
+												} else {
+													let attempts = 0;
+													const timer = setInterval(function(root) {
 														if (root.Bokeh !== undefined) {
+															clearInterval(timer);
 															embed_document(root);
 														} else {
-															let attempts = 0;
-															const timer = setInterval(function(root) {
-																if (root.Bokeh !== undefined) {
-																	clearInterval(timer);
-																	embed_document(root);
-																} else {
-																	attempts++;
-																	if (attempts > 100) {
-																		clearInterval(timer);
-																		console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
-																	}
-																}
-															}, 10, root);
+															attempts++;
+															if (attempts > 100) {
+																clearInterval(timer);
+																console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+															}
 														}
-													})(window);
-												});
-											};
-											if (document.readyState != "loading") fn();
-											else document.addEventListener("DOMContentLoaded", fn);
-										})();
-									</script>
-								</div>
-							</div>
+													}, 10, root);
+												}
+											})(window);
+										});
+									};
+									if (document.readyState != "loading") fn();
+									else document.addEventListener("DOMContentLoaded", fn);
+								})();
+							</script>
 						</div>
 					</div>
+						
 				</div>
 			</div>
 		</section>
