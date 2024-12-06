@@ -40,37 +40,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body {
-  height: 100%;
-  overflow-y: auto; /* Ensures scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling for a better user experience */
-}
-
-#home-section {
-  height: 100vh; /* Full viewport height */
-  overflow: auto; /* Allow scrolling if necessary */
-}
-
-.navbar-collapse {
-  transition: height 0.3s ease-out;
-}
-
-.navbar-nav .nav-link {
-  cursor: pointer; /* Makes links feel more clickable */
-}
-@media (max-width: 768px) {
-.navbar-brand {
-  font-size: 1.5rem;
-}
-
-.hero {
-  text-align: center;
-}
-
-.progress-wrap {
-  margin-bottom: 20px;
-}
-}
 
 html {
   font-family: sans-serif;

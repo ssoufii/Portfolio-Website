@@ -82,16 +82,6 @@
 
 	onePageClick();
 	
-	// Close the navbar after clicking a link
-	document.querySelectorAll('.nav-link').forEach(link => {
-		link.addEventListener('click', () => {
-			const navbarCollapse = document.querySelector('.navbar-collapse');
-			if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-			navbarCollapse.classList.remove('show'); // Collapse the menu
-			}
-		});
-	});
-	
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
