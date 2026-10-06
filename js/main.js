@@ -19,8 +19,13 @@
 
 	var fullHeight = function() {
 
+		var lastWidth = $(window).width();
 		$('.js-fullheight').css('height', $(window).height());
+		// iOS fires resize when the address bar shows/hides while scrolling;
+		// only recalculate on real width changes so the hero doesn't jump.
 		$(window).resize(function(){
+			if ($(window).width() === lastWidth) return;
+			lastWidth = $(window).width();
 			$('.js-fullheight').css('height', $(window).height());
 		});
 
@@ -71,6 +76,11 @@
 
 	    var href = $.attr(this, 'href');
 
+	    if ($('#ftco-nav').hasClass('show')) {
+	    	$('#ftco-nav').collapse('hide');
+	    	$('.js-fh5co-nav-toggle').removeClass('active');
+	    }
+
 	    $('html, body').animate({
 	        scrollTop: $($.attr(this, 'href')).offset().top - 70
 	    }, 500, function() {
@@ -81,6 +91,14 @@
 	};
 
 	onePageClick();
+
+	// Close the mobile menu when tapping anywhere outside it
+	$(document).on('click touchstart', function(event) {
+		if (!$('#ftco-nav').hasClass('show')) return;
+		if ($(event.target).closest('#ftco-navbar').length) return;
+		$('#ftco-nav').collapse('hide');
+		$('.js-fh5co-nav-toggle').removeClass('active');
+	});
 	
 
 	var carousel = function() {
@@ -92,6 +110,9 @@
 	    animateIn: 'fadeIn',
 	    nav:false,
 	    autoplayHoverPause: false,
+	    mouseDrag: false,
+	    touchDrag: false,
+	    pullDrag: false,
 	    items: 1,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
