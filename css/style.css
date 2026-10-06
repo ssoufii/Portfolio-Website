@@ -9686,3 +9686,16 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.header-with-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px; }
+  .header-with-link h2 {
+    margin-bottom: 0; }
+  .header-with-link .header-link {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap; }
