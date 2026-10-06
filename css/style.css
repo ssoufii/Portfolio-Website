@@ -9703,3 +9703,21 @@ textarea.form-control {
 .owl-carousel.home-slider .owl-item {
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
+
+/* Resume entries: emphasize role and company, de-emphasize dates */
+#resume-section .resume-wrap .date {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px; }
+#resume-section .resume-wrap h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 4px; }
+#resume-section .resume-wrap .position {
+  font-size: 18px;
+  letter-spacing: 2px; }
+@media (max-width: 767.98px) {
+  #resume-section .resume-wrap h2 {
+    font-size: 26px; }
+  #resume-section .resume-wrap .position {
+    font-size: 16px; } }
