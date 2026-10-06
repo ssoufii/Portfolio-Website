@@ -9693,8 +9693,6 @@ textarea.form-control {
   align-items: baseline;
   justify-content: space-between;
   gap: 4px 16px; }
-  .header-with-link h2 {
-    margin-bottom: 0; }
   .header-with-link .header-link {
     font-size: 20px;
     font-weight: 700;
